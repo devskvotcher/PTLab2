@@ -463,8 +463,7 @@ class PurchasePriceIncreaseTestCase(TestCase):
         # Проверка, что после покупки происходит использование нужного шаблона (или перенаправление, если это требуется).
         response = self.create_purchase(1)
         self.assertTemplateUsed(response, 'shop/byesuccses.html')
-        # ИЛИ если вы ожидаете перенаправление, можно использовать следующее:
-        # self.assertRedirects(response, expected_url, status_code=302, target_status_code=200, ...)
+
 ```
 
 ### Вывод
